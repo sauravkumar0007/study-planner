@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🎓 Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Personalized Study Planner</h1>
+
+  <form id="studyForm">
+    <label>Subjects:<input type="text" id="subjects" required /></label>
+    <label>Exam Dates (YYYY-MM-DD):<input type="text" id="examDates" required /></label>
+    <label>Daily Hours:<input type="number" id="dailyHours" min="1" max="24" required /></label>
+    <button type="submit">Generate Timetable</button>
+  </form>
+
+  <div id="timetable"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
